@@ -1,0 +1,215 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgb(151, 144, 129), white);
+            color: white;
+            text-align: center;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .menu a {
+            color: rgb(129, 120, 120);
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .portfolio-info, .portfolio-photos, .portfolio-video, .portfolio-contact {
+            padding: 20px;
+        }
+        #about {
+            background-color: rgb(177, 172, 161);
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #about img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+        }
+        #about .text {
+            max-width: 600px;
+            margin-right: 20px;
+            text-align: left;
+            top: 0;
+            left: 0;
+            right: 0;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        #photos img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+        #video {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        #video video {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #contact {
+            margin-top: 20px;
+            padding: 20px;
+            color: black;
+            top: 0;
+            left: 0;
+            right: 0;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #Amim {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 223, 249);
+            transition: transform 2s, background-color 2s, width 2s, height 2s;
+            color: rgb(255, 255, 255);
+            margin: 20px auto;
+        }
+        #Amim:hover {
+            transform: rotate(360deg);
+            width: 200px;
+            height: 200px;
+            background-color: rgb(179, 179, 255);
+        }p {
+    float: left;
+    width: 10%; 
+}
+.body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(241, 208, 232), white);
+    color: white;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #ffffff; 
+}
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, black, white);
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-item {
+    margin: 0 15px;
+    padding: 10px 20px;
+    color: rgb(160, 149, 135);
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-item.about {
+    background-color: #d3d3d3; 
+    border-radius: 5px;
+}
+
+.content {
+    margin-top: 20px;
+}
+.portfolio-title{
+    margin-top: 250px;
+    background: url(images/d.PNG);
+    font-size: 50px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s infinite ease-in-out;
+}
+@keyframes animate{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100 100;
+    }
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
